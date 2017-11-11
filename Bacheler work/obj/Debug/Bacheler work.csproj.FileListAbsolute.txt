@@ -1,0 +1,71 @@
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\ApplicationInsights.config
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Bacheler work.dll.config
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Bacheler work.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Bacheler work.pdb
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Antlr3.Runtime.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\EntityFramework.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\EntityFramework.SqlServer.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.Web.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Newtonsoft.Json.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Owin.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Helpers.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Mvc.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Optimization.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Razor.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.WebPages.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\WebGrease.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Helpers.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Mvc.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Optimization.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Razor.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.WebPages.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Antlr3.Runtime.pdb
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Newtonsoft.Json.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\EntityFramework.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\EntityFramework.SqlServer.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.Web.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.csprojResolveAssemblyReference.cache
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.csproj.CoreCompileInputs.cache
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.pdb
