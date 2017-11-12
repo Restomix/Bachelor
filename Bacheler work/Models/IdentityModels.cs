@@ -67,5 +67,7 @@ namespace Bacheler_work.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Bacheler_work.Models.Data> Data { get; set; }
     }
 }

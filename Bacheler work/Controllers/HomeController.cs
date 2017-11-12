@@ -1,4 +1,6 @@
 ﻿using Bacheler_work.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +13,16 @@ namespace Bacheler_work.Controllers
     {
         public ActionResult Index()
         {
+           
             return View();
         }
-
+        [Authorize(Roles = "admin")]
         public ActionResult About()
         {
-            ApplicationDbContext one = new ApplicationDbContext();
-            
-          
+
             ViewBag.Message = "Your application description page.";
 
-            return View(one.sensors.First());
+            return View();
         }
 
         public ActionResult Contact()

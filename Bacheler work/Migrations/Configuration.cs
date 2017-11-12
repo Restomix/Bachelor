@@ -1,5 +1,8 @@
-namespace Bacheler_work.Migrations
+﻿namespace Bacheler_work.Migrations
 {
+    using Bacheler_work.Models;
+    using Microsoft.AspNet.Identity;
+    using Microsoft.AspNet.Identity.EntityFramework;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -14,18 +17,35 @@ namespace Bacheler_work.Migrations
 
         protected override void Seed(Bacheler_work.Models.ApplicationDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            var userManager = new ApplicationUserManager(new UserStore<ApplicationUser>(context));
+
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+
+            // создаем две роли
+            var role1 = new IdentityRole { Name = "admin" };
+            var role2 = new IdentityRole { Name = "user" };
+
+            // добавляем роли в бд
+            roleManager.Create(role1);
+            roleManager.Create(role2);
+
+            // создаем пользователей
+            var admin = new ApplicationUser { Email = "admin@gmail.com", UserName = "Admin" };
+            var user = new ApplicationUser { Email = "user@gmail.com", UserName = "User" };
+            string password = "admin";
+            string user_password = "user";
+
+            var result = userManager.Create(admin, password);
+            var result1 = userManager.Create(user, user_password);
+            // если создание пользователя прошло успешно
+            if (result.Succeeded && result1.Succeeded)
+            {
+                // добавляем для пользователя роль
+                userManager.AddToRole(admin.Id, role1.Name);
+                userManager.AddToRole(user.Id, role2.Name);
+            }
+            base.Seed(context);
         }
     }
 }
