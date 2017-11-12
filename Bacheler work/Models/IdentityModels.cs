@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System;
+using System.Collections.Generic;
 
 namespace Bacheler_work.Models
 {
@@ -21,19 +22,26 @@ namespace Bacheler_work.Models
         }
     }
     public class Sensor
-    {   
+    {
         public int Id { set; get; }
         public string phoneNumber { get; set; }
         public string location { get; set; }
         public string description { get; set; }
-        public Data dataInformation { get; set; }
-        public Statistic statistic { get; set; } 
+        public ICollection<Data> datas { get; set; }
+
+        public Sensor()
+        {
+            datas = new List<Data>();
+        }
     }
     public class Data
-    {   
-        public DateTime dateTime { set; get; }
-        public decimal batery { get; set; }
-        public decimal water { get; set; }
+    {
+        public int Id { get; set; }
+        public int SensorId { get; set; }
+
+        public string dateTime { set; get; }
+        public int batery { get; set; }
+        public int water { get; set; }
     }
     public class Statistic
     {
