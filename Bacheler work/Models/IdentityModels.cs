@@ -3,6 +3,9 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System;
 
 namespace Bacheler_work.Models
 {
@@ -17,9 +20,36 @@ namespace Bacheler_work.Models
             return userIdentity;
         }
     }
+    public class Sensor
+    {   
+        public int Id { set; get; }
+        public string phoneNumber { get; set; }
+        public string location { get; set; }
+        public string description { get; set; }
+        public Data dataInformation { get; set; }
+        public Statistic statistic { get; set; } 
+    }
+    public class Data
+    {   
+        public DateTime dateTime { set; get; }
+        public decimal batery { get; set; }
+        public decimal water { get; set; }
+    }
+    public class Statistic
+    {
+        public int lowWater { get; set; }
+        public int hightWater { get; set; }
+        public int averageWater { get; set; }
+
+        public float lowBaterry { get; set; }
+        public float hightBaterry { get; set; }
+        public float averageBaterry { get; set; }
+    }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Sensor> sensors { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
