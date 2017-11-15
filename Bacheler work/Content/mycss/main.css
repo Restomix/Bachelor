@@ -1,0 +1,13 @@
+﻿#mapid {
+    height: 500px;
+    width: 650px;
+    border: thick;
+    border: solid;
+    border-color: blue;
+    border-radius: 8px 8px;
+    border-width:medium;
+}
+#scrollit {
+    overflow-y: scroll;
+    height: 500px;
+}

@@ -16,7 +16,7 @@ namespace Bacheler_work
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Track", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
