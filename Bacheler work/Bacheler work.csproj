@@ -211,6 +211,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\leaflet\images\layers-2x.png" />
+    <Content Include="Content\leaflet\images\layers.png" />
+    <Content Include="Content\leaflet\images\marker-icon-2x.png" />
+    <Content Include="Content\leaflet\images\marker-icon.png" />
+    <Content Include="Content\leaflet\images\marker-shadow.png" />
+    <Content Include="Content\leaflet\leaflet-src.js" />
+    <Content Include="Content\leaflet\leaflet.css" />
+    <Content Include="Content\leaflet\leaflet.js" />
     <Content Include="Content\mycss\main.css" />
     <Content Include="Content\myscripts\main.js" />
     <Content Include="favicon.ico" />
@@ -222,6 +230,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\leaflet\leaflet-src.js.map" />
+    <Content Include="Content\leaflet\leaflet.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
