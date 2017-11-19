@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Bacheler_work.Models
 {
@@ -22,10 +23,14 @@ namespace Bacheler_work.Models
         }
     }
     public class Sensor
-    {
+    {   
+        [DisplayName("ID")]
         public int Id { set; get; }
+        [DisplayName("Phone number")]
         public string phoneNumber { get; set; }
+        [DisplayName("Location")]
         public string location { get; set; }
+        [DisplayName("Description")]
         public string description { get; set; }
         public ICollection<Data> datas { get; set; }
 
@@ -38,9 +43,11 @@ namespace Bacheler_work.Models
     {
         public int Id { get; set; }
         public int SensorId { get; set; }
-
+        [DisplayName("Data")]
         public string dateTime { set; get; }
+        [DisplayName("Batery")]
         public int batery { get; set; }
+        [DisplayName("Water")]
         public int water { get; set; }
     }
     public class Statistic
@@ -57,17 +64,17 @@ namespace Bacheler_work.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Sensor> sensors { get; set; }
-
+        public DbSet<Data> Data { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
-        }
 
+        }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<Bacheler_work.Models.Data> Data { get; set; }
+
     }
 }

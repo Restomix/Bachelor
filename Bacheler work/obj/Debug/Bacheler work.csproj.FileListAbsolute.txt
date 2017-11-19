@@ -65,9 +65,9 @@ C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.Dependen
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\Microsoft.AI.Web.xml
-C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler_work.Migrations.DataMigration.resources
-C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.csproj.GenerateResource.Cache
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.csproj.CoreCompileInputs.cache
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.dll
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.pdb
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.csprojResolveAssemblyReference.cache
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler_work.Migrations.DataMigration.resources
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.csproj.GenerateResource.Cache
