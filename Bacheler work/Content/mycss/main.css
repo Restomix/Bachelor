@@ -11,3 +11,11 @@
     overflow-y: scroll;
     height: 500px;
 }
+tr.sensor:hover{
+    background-color:lightblue;
+    cursor: pointer;
+}
+body,div, table{
+    background-color:gray;
+    
+}

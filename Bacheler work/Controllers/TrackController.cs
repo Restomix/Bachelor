@@ -10,14 +10,19 @@ namespace Bacheler_work.Controllers
     public class TrackController : Controller
     {
         // GET: Track
+        ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
-            return View("Main");
+            ViewData["Datas"] = db.Data.ToList();
+            return View("Main", db.sensors.ToList());
         }
         [HttpPost]
-        public ActionResult AddSensor(Sensor one)
+        public ActionResult AddSensor(Sensor newSensor)
         {
-            return View(one);
+            ViewData["Datas"] = db.Data.ToList();
+            db.sensors.Add(newSensor);
+            db.SaveChanges();
+            return View("Main", db.sensors.ToList());
         }
     }
 }

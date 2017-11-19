@@ -1,0 +1,50 @@
+﻿@model Bacheler_work.Models.Data
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Data</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SensorId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SensorId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.batery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.batery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.water)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.water)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -190,8 +190,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SensorsController.cs" />
     <Compile Include="Controllers\TrackController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -279,6 +281,16 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Track\Main.cshtml" />
     <Content Include="Views\Shared\AddSensor.cshtml" />
+    <Content Include="Views\Sensors\Create.cshtml" />
+    <Content Include="Views\Sensors\Delete.cshtml" />
+    <Content Include="Views\Sensors\Details.cshtml" />
+    <Content Include="Views\Sensors\Edit.cshtml" />
+    <Content Include="Views\Sensors\Index.cshtml" />
+    <Content Include="Views\Data\Create.cshtml" />
+    <Content Include="Views\Data\Delete.cshtml" />
+    <Content Include="Views\Data\Details.cshtml" />
+    <Content Include="Views\Data\Edit.cshtml" />
+    <Content Include="Views\Data\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

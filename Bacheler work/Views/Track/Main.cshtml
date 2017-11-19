@@ -1,19 +1,15 @@
-﻿
+﻿@model IEnumerable<Bacheler_work.Models.Sensor>
 @{
     ViewBag.Title = "Main";
 }
-<h2>Tracking</h2>
-<div class="container">
-
-
-</div>
+<h2 style="text-align:center;color:aqua;">Tracking</h2>
 <div class="container">
     <div class="row">
         <div class="col-md-6" id="scrollit">
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home">Statistic</a></li>
-                <li data-toggle="tab"><a href="#menu1">My sensors</a></li>
-                <li data-toggle="tab"><a href="#menu2">Add new sensors</a></li>
+                <li><a data-toggle="tab" href="#menu1">My sensors</a></li>
+                <li><a data-toggle="tab" href="#menu2">Add sensors</a></li>
             </ul>
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
@@ -26,13 +22,72 @@
                                 <th scope="col">Battery</th>
                             </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody>
+                            @foreach (var item in (ViewData["Datas"] as List<Bacheler_work.Models.Data>))
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SensorId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.dateTime)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.batery)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.water)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
                     </table>
                 </div>
-                <div id="menu1" class="tab-pane">
-                    @Html.Partial("~/Views/Shared/AddSensor.cshtml")
-                </div>
-                <div id="menu1" class="tab-pane">
+                <div id="menu1" class="tab-pane fade">
+                    <table class="table">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Id)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.phoneNumber)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.location)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.description)
+                            </th>
+                            <th></th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr class="sensor">
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.phoneNumber)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.location)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.description)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", String.Format("Edit/{0}", item.Id), "Sensors") |
+                                    @Html.ActionLink("Delete", String.Format("Delete/{0}", item.Id), "Sensors") 
+                                </td>
+                            </tr>
+                        }
+                        </table>
+</div>
+                <div id="menu2" class="tab-pane fade ">
                     @Html.Partial("~/Views/Shared/AddSensor.cshtml")
                 </div>
             </div>
@@ -57,9 +112,13 @@
     }).addTo(mymap);
     
     function onMapClick(e) {
+        if (marker != null)
+        {
+            mymap.removeLayer(marker);
+        }
         marker = L.marker(e.latlng, { draggable: true }).addTo(mymap);
         marker.bindPopup("<b>Give me description</b>").openPopup();
-        $("#inputForLocation").html(e.latlng.toString());
+        $("#inputForLocation").val(e.latlng.lng.toString().substr(0, 8) + " x " + e.latlng.lat.toString().substr(0, 8));
     }
     mymap.on('click', onMapClick);
 </script>
