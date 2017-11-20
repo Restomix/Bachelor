@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 
 namespace Bacheler_work.Controllers
 {
@@ -24,5 +25,11 @@ namespace Bacheler_work.Controllers
             db.SaveChanges();
             return View("Main", db.sensors.ToList());
         }
+        [HttpGet]
+        public ActionResult GetSensors()
+        {
+            return Json(db.sensors.ToList(), JsonRequestBehavior.AllowGet);
+        }
+
     }
 }

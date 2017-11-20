@@ -120,5 +120,6 @@
         marker.bindPopup("<b>Give me description</b>").openPopup();
         $("#inputForLocation").val(e.latlng.lng.toString().substr(0, 8) + " x " + e.latlng.lat.toString().substr(0, 8));
     }
+  //  $.getJSON("loc")
     mymap.on('click', onMapClick);
 </script>
