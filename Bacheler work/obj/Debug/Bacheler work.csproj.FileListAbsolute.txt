@@ -71,3 +71,9 @@ C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.p
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.csprojResolveAssemblyReference.cache
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler_work.Migrations.DataMigration.resources
 C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\obj\Debug\Bacheler work.csproj.GenerateResource.Cache
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Net.Http.Formatting.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Http.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Http.WebHost.dll
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Net.Http.Formatting.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Http.xml
+C:\Users\Yura\Desktop\Apps\Bacheler work\Bacheler work\bin\System.Web.Http.WebHost.xml

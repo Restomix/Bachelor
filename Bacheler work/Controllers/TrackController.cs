@@ -21,11 +21,16 @@ namespace Bacheler_work.Controllers
         public ActionResult AddSensor(Sensor newSensor)
         {
             ViewData["Datas"] = db.Data.ToList();
-            db.sensors.Add(newSensor);
-            db.SaveChanges();
+            if (newSensor != null)
+            {
+                db.sensors.Add(newSensor);
+                db.SaveChanges();
+            }
             return View("Main", db.sensors.ToList());
         }
-        [HttpGet]
+        
+        [AllowAnonymous]
+        [AcceptVerbs(HttpVerbs.Get)]
         public ActionResult GetSensors()
         {
             return Json(db.sensors.ToList(), JsonRequestBehavior.AllowGet);
