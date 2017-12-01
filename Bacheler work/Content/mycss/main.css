@@ -8,11 +8,14 @@
     border-width:medium;
 }
 #scrollit {
-    overflow-y: scroll;
-    height: 500px;
+    overflow-y: scroll,auto;
+    
+    height: auto;
 }
 tr.sensor:hover{
     background-color:lightblue;
     cursor: pointer;
 }
-
+a{
+    color:aqua;
+}

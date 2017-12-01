@@ -155,7 +155,7 @@ namespace Bacheler_work.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await UserManager.AddToRoleAsync(user.Id, "user");
+                    await UserManager.AddToRoleAsync(user.Id, "admin");
 
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
